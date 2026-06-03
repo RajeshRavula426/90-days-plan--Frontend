@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Tax Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        .container{
+            width: 500px;
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: darkblue;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .gender{
+            width: auto;
+        }
+
+        button{
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Income Tax Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Father Name</label>
+        <input type="text" placeholder="Enter father name">
+
+        <label>PAN Number</label>
+        <input type="text" placeholder="ABCDE1234F">
+
+        <label>Aadhaar Number</label>
+        <input type="text" placeholder="Enter Aadhaar number">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Gender</label><br>
+
+        <input type="radio" name="gender" class="gender"> Male
+        <input type="radio" name="gender" class="gender"> Female
+        <input type="radio" name="gender" class="gender"> Other
+
+        <br><br>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number">
+
+        <label>Annual Income</label>
+        <input type="number" placeholder="Enter annual income">
+
+        <label>Tax Regime</label>
+        <select>
+            <option>Old Regime</option>
+            <option>New Regime</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

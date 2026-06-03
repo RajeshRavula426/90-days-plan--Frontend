@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS SELECTORS
+
+</title>
+
+<style>
+
+/* style first input */
+input:first-child{
+  border:2px solid blue;
+}
+
+/* every text input */
+input[type="text"]{
+  background: #f0f0f0;
+}
+
+/* input when focused */
+input:focus{
+  background: yellow;
+}
+
+/* every label after input */
+input + label{
+  color:red;
+}
+
+/* hover button */
+button:hover{
+  color:white;
+  background:black;
+}
+
+</style>
+</head>
+<body>
+
+<form>
+
+<input type="text">
+<label>Name</label>
+
+<br><br>
+
+<input type="text">
+<label>Email</label>
+
+<br><br>
+
+<button>Submit</button>
+
+</form>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+tr:nth-child(even){
+ background:#eee;
+}
+
+tr:nth-child(odd){
+ background:#ddd;
+}
+
+td:first-child{
+ color:blue;
+}
+
+td:last-child{
+ color:red;
+}
+
+tr:hover{
+ background:orange;
+}
+
+</style>
+</head>
+<body>
+
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td>Rajesh</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td>Rahul</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>Anu</td>
+<td>95</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+li:first-child{
+ color:red;
+}
+
+li:last-child{
+ color:blue;
+}
+
+li:nth-child(2){
+ color:green;
+}
+
+li:hover{
+ font-size:30px;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Node</li>
+</ul>
+
+</body>
+</html>

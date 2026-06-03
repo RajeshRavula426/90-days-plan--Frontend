@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Course Registration Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .course-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .break-box {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .demo-box {
+            height: 80px;
+            background: lightblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <!-- Heading -->
+        <h1 class="display-4 text-center">Student Course Registration</h1>
+
+        <p class="text-center">
+            <mark>Bootstrap Practice Project</mark>
+            
+    
+        </p>
+
+        <!-- Form + Courses -->
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="card p-4">
+
+                    <h3>Registration Form</h3>
+
+                    <form class="was-validated">
+
+                        <div class="mb-3">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Phone</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+91</span>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Address</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Department</label>
+                            <select class="form-select">
+                                <option>CSE</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>Mechanical</option>
+                                <option>Civil</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Year</label>
+                            <select class="form-select">
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Course Interest Level</label>
+                            <input type="range" class="form-range">
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="user" placeholder="Username">
+                            <label for="user">Username</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="pass" placeholder="Password">
+                            <label for="pass">Password</label>
+                        </div>
+
+                        <button class="btn btn-primary">Register</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <h3>Available Courses</h3>
+
+                <div class="course-card">
+                    <h4>Java Programming</h4>
+                    <p>Learn the fundamentals of Java programming language and build real-world applications.</p>
+                </div>
+
+                <div class="course-card">
+                    <h4>Web Development</h4>
+                    <p>Master HTML, CSS, and JavaScript to create stunning and responsive websites.</p>
+                </div>
+
+                <div class="course-card">
+                    <h4>Data Science</h4>
+                    <p>Dive into data analysis, visualization, and machine learning using Python.</p>
+                </div>
+
+                <!-- Student Table -->
+                <h2 class="mt-5">Student List</h2>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Fee</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rajesh</td>
+                            <td>Java</td>
+                            <td>15000</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Ravi</td>
+                            <td>Python</td>
+                            <td>18000</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Priya</td>
+                            <td>DotNet</td>
+                            <td>16000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Figure -->
+                <figure class="figure text-center w-100 mt-5">
+                    <img src="https://via.placeholder.com/800x300" class="figure-img img-fluid rounded">
+
+                    <figcaption class="figure-caption">
+                        College Campus
+                    </figcaption>
+                </figure>
+
+                <!-- Breakpoints -->
+                <h2 class="mt-5">Bootstrap Breakpoints</h2>
+
+                <div class="row text-center">
+
+                    <div class="col">
+                        <div class="break-box bg-primary">XS</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="break-box bg-success">SM</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="break-box bg-danger">MD</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="break-box bg-warning text-dark">LG</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="break-box bg-info">XL</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="break-box bg-dark">XXL</div>
+                    </div>
+
+                </div>
+
+                <!-- Alignment -->
+                <h2 class="mt-5">Column Alignment</h2>
+
+                <div class="row align-items-start border mb-3" style="height:100px;">
+                    <div class="col demo-box">Start</div>
+                </div>
+
+                <div class="row align-items-center border mb-3" style="height:100px;">
+                    <div class="col demo-box">Center</div>
+                </div>
+
+                <div class="row align-items-end border mb-3" style="height:100px;">
+                    <div class="col demo-box">End</div>
+                </div>
+
+            </div>
+
+</body>
+
+</html>

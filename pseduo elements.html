@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query + Pseudo Elements Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#e3f2fd;
+}
+
+/* Card */
+.card{
+    width:350px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+/* Pseudo Element before */
+h1::before{
+    content:"Welcome to ";
+    color:gray;
+    font-size:18px;
+
+   
+}
+
+/* Pseudo Element after */
+h2::after{
+    content:" - Web Developer";
+    color:gray;
+    font-size:18px;
+}
+
+p::before{
+    content:"Course: ";
+    font-weight:bold;
+    color:green;
+}
+
+/* Button */
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:navy;
+    color:white;
+    border:none;
+    border-radius:6px;
+    text-transform:lowercase;
+    cursor:pointer;
+}
+
+button:hover{
+    background:green;
+}
+
+
+/* Tablet */
+@media(max-width:900px){
+
+body{
+    background:lightgreen;
+}
+
+.card{
+    width:280px;
+}
+
+}
+
+
+/* Mobile */
+@media(max-width:600px){
+
+body{
+    background:lightcoral;
+}
+
+.card{
+    width:90%;
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Rajesh</h2>
+
+<p>HTML & CSS Practice</p>
+
+<button>View Profile</button>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:lightblue;
+}
+
+/* Box Model */
+.card{
+    width:320px;
+    margin:50px auto;
+    padding:30px;
+    border:3px solid navy;
+    background:white;
+    text-align:center;
+    border-radius:12px;
+}
+
+/* ::before */
+h2::before{
+    content:"Web Developer ";
+}
+
+/* ::after */
+h2::after{
+    content:" - Rajesh";
+}
+
+/* Text */
+p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* Button Styling */
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:navy;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+}
+
+/* Hover */
+button:hover{
+    background:green;
+}
+
+/* Media Query Tablet */
+@media(max-width:900px){
+
+body{
+    background:lightgreen;
+}
+
+.card{
+    width:250px;
+}
+
+}
+
+/* Media Query Mobile */
+@media(max-width:600px){
+
+body{
+    background:lightcoral;
+}
+
+.card{
+    width:90%;
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}
+

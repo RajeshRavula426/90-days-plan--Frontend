@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Food Order Portal</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.food-card{
+border:1px solid #ddd;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+text-align:center;
+}
+
+.box{
+height:80px;
+background-color:lightblue;
+border:2px solid black;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container mt-5">
+
+<h1 class="display-4 text-center">Food Order Portal</h1>
+
+<p class="text-center">
+<mark>Bootstrap Assignment</mark>
+<strong>Food Delivery</strong>
+<em>Practice Project</em>
+</p>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<div class="card p-4">
+
+<h3>Customer Details</h3>
+
+<form class="was-validated">
+
+<div class="mb-3">
+<label>Name</label>
+<input type="text" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Phone</label>
+<div class="input-group">
+<span class="input-group-text">+91</span>
+<input type="text" class="form-control" required>
+</div>
+</div>
+
+<div class="mb-3">
+<label>Food Category</label>
+<select class="form-select">
+<option>Pizza</option>
+<option>Burger</option>
+<option>Biryani</option>
+<option>Pasta</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>Quantity</label>
+<select class="form-select">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>Spice Level</label>
+<input type="range" class="form-range">
+</div>
+
+<div class="form-floating mb-3">
+<input type="text" class="form-control" placeholder="Address">
+<label>Delivery Address</label>
+</div>
+
+<div class="form-floating mb-3">
+<input type="text" class="form-control" placeholder="Username">
+<label>Username</label>
+</div>
+
+<div class="form-floating mb-3">
+<input type="password" class="form-control" placeholder="Password">
+<label>Password</label>
+</div>
+
+<button class="btn btn-success">
+Place Order
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<h3>Available Foods</h3>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+<div class="col">
+<div class="food-card">
+🍕 Pizza
+</div>
+</div>
+
+<div class="col">
+<div class="food-card">
+🍔 Burger
+</div>
+</div>
+
+<div class="col">
+<div class="food-card">
+🍛 Biryani
+</div>
+</div>
+
+<div class="col">
+<div class="food-card">
+🥪 Sandwich
+</div>
+</div>
+
+<div class="col">
+<div class="food-card">
+🍝 Pasta
+</div>
+</div>
+
+<div class="col">
+<div class="food-card">
+🍜 Noodles
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<h2>Order Summary</h2>
+
+<table class="table table-striped table-hover">
+<tr>
+<th>Order ID</th>
+<th>Food</th>
+<th>Quantity</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Pizza</td>
+<td>2</td>
+<td>₹400</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Burger</td>
+<td>1</td>
+<td>₹150</td>
+</tr>
+
+</table>
+
+<hr>
+
+<figure class="figure">
+<img src="https://via.placeholder.com/800x300"
+class="figure-img img-fluid rounded">
+
+<figcaption class="figure-caption">
+Restaurant Banner
+</figcaption>
+</figure>
+
+<hr>
+
+<h2>Column Alignment</h2>
+
+<div class="row align-items-center border" style="height:120px;">
+<div class="col box">
+Center Alignment
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

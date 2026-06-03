@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Practice</title>
+
+<style>
+
+/* Universal selector */
+*{
+  font-family: Arial;
+}
+
+/* Element selector */
+h1{
+  color: rgb(9, 255, 0);
+}
+
+/* ID selector */
+#mainTitle{
+  text-align: center;
+}
+
+/* Class selector */
+.box{
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+/* Group selector */
+h2,p{
+  color: green;
+}
+
+/* Descendant selector */
+div p{
+  background-color: lightyellow;
+}
+
+/* Child selector */
+ul > li{
+  color: red;
+}
+
+/* Attribute selector */
+input[type="text"]{
+  background-color: lightgray;
+}
+
+/* Hover selector */
+button:hover{
+  background-color: orange;
+}
+
+/* nth-child selector */
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="mainTitle">CSS Selectors Practice</h1>
+
+<div class="box">
+  <h2>Student Form</h2>
+
+  <p>This paragraph is inside div.</p>
+
+  Name:
+  <input type="text"><br><br>
+
+  Email:
+  <input type="text"><br><br>
+
+  <button>Submit</button>
+</div>
+
+<br>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<br>
+
+<table border="1" width="50%">
+<tr>
+<th>Name</th>
+<th>Course</th>
+</tr>
+
+<tr>
+<td>Rajesh</td>
+<td>BTech</td>
+</tr>
+
+<tr>
+<td>Rahul</td>
+<td>MCA</td>
+</tr>
+
+<tr>
+<td>Sita</td>
+<td>BSc</td>
+</tr>
+
+</table>
+
+</body>
+</html>

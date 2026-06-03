@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Box Model</title>
+
+<style>
+
+body{
+  font-family: Arial;
+  background: rgb(189, 173, 173);
+}
+
+.margin{
+  width: 520px;
+  background: #d3d3d3;
+  padding: 35px;
+  margin: 40px auto;
+  border: 2px solid gray;
+}
+
+.border{
+  background: #f4b183;
+  padding: 30px;
+}
+
+.padding{
+  background: #d9ead3;
+  padding: 25px;
+}
+
+.content{
+  background: white;
+  text-align: center;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.label{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="margin">
+  <div class="label">Margin</div>
+
+  <div class="border">
+    <div class="label">Border</div>
+
+    <div class="padding">
+      <div class="label">Padding</div>
+
+      <div class="content">
+        Content
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

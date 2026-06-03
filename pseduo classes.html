@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo Classes Practice</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f0f8ff;
+    text-align: center;
+}
+
+/* Title hover */
+h1:hover{
+    color:navy;
+}
+
+/* List box */
+ul{
+    width:300px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    border:2px solid black;
+    list-style:none;
+    border-radius:10px;
+}
+
+/* first item */
+li:first-child{
+    color:red;
+    font-weight:bold;
+}
+
+/* last item */
+li:last-child{
+    color:rgb(16, 109, 112);
+    font-weight:bold;
+}
+
+/* even item */
+li:nth-child(even){
+    background:rgb(211, 211, 211);
+}
+
+/* hover */
+li:hover{
+    background:yellow;
+}
+
+/* button */
+button{
+    padding:12px 25px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+/* button hover */
+button:hover{
+    background:orange;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Pseudo Classes</h1>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Java</li>
+</ul>
+
+<button>Submit</button>
+
+</body>
+</html>

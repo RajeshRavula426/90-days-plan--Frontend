@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Login Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+    background-size:400% 400%;
+    animation:bgMove 8s ease infinite;
+}
+
+.container{
+    width:380px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:slideUp 1.2s ease;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#ff009d;
+    box-shadow:0 0 8px #ff009d;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#4facfe;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:1s;
+}
+
+/* Rotate 360° on hover */
+button:hover{
+    transform:rotate(360deg);
+    background:#ff009d;
+}
+
+/* form animation */
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* background animation */
+@keyframes bgMove{
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Login</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Roll Number">
+
+<input type="password" placeholder="Password">
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
